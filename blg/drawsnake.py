@@ -44,7 +44,21 @@ turtle.done()
 
 import turtle
 
-turtle.circle(180, -90)
+turtle.setup(1300, 700)
+turtle.hideturtle()
+turtle.pencolor('red')
+turtle.fillcolor('yellow')
+turtle.speed(10)
+turtle.penup()
+turtle.goto(-100, 0)
+turtle.pendown()
+turtle.begin_fill()
+turtle.fd(200)
+while abs(pos(x,y)) < 1:
+    turtle.left(170)
+    turtle.forward(200)
+
+turtle.end_fill()
 turtle.done()
 
 
